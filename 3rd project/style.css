@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top,
+#bottom {
+    width: 95vw;
+    max-width: 100%;
+}
+
+#top {
+    height: 60vh;
+    margin: 0 auto;
+}
+
+#bottom {
+    height: 40vh;
+    margin: 0 auto;
+}
+
+#navbar {
+    height: 10%;
+    display: flex;
+}
+
+#lnav {
+    width: 33vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('logo1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+}
+
+
+#mnav {
+    width: 34vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mnav a {
+   
+    text-decoration: none;
+    color: black;
+}
+
+#rnav {
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 33vw;
+    height: 100%;
+}
+
+#rnav a {
+    text-decoration: none;
+    color: black;
+}
+
+#btn {
+    margin-left: 10px;
+    padding: 3px;
+    background-color: rgb(235, 169, 235);
+    border-radius: 10px;
+    border: none;
+
+}
+
+#textarea {
+    height: 35%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+#textarea #ltext {
+    width: 50%;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+#textarea #ltext #text h2{
+    font-size: 30px;
+}
+#textarea #rtext {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+#slash{
+    font-size: 25px;
+}
+#tagline{
+    font-size: 25px;
+}
+#btn2 {
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+#img {
+    height: 40%;
+    width: 95vw;
+    background-image: url(img.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+#logos {
+    height: 15%;
+    display: flex;
+}
+
+#logo1,
+#logo2,
+#logo3,
+#logo4,
+#logo5 {
+    width: 20%;
+    padding: 10px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo1 {
+    background-image: url(Rakuten.png);
+
+}
+
+#logo2 {
+    background-image: url(NCR.png);
+
+}
+
+#logo3 {
+    background-image: url(Monday.png);
+
+}
+
+#logo4 {
+    background-image: url(Rakuten.png);
+
+}
+
+#logo5 {
+    background-image: url(Dropbox.png);
+
+}
+
+#bOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+}
+
+#text2 {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: none;
+}
+
+#text2 p {
+    font-size: 3vw;
+
+}
+
+#bTwo {
+    height: 50%;
+    display: flex;
+}
+
+#Avatars {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avt1,
+#avt2,
+#avt3,
+#avt4,
+#avt5 {
+    width: 10.5%;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+}
+
+#avt1 {
+
+    background-color: palevioletred;
+}
+
+#avt2 {
+
+    background-color: rgb(162, 81, 162);
+}
+
+#avt3 {
+
+    background-color: rgb(162, 250, 250);
+}
+
+#avt4 {
+
+    background-color: rgb(243, 223, 126);
+}
+
+#Slash2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bolder;
+    display: flex;
+    width: 10%;
+}
+
+#text3 {
+    padding-top: 40px;
+    padding-left: 30px;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* padding: 30px; */
+}
+
+#text3 h5 {
+    font-size: 15px;
+}
+
+#bold {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}  
+@media (max-width:877px) {
+    #rnav{
+        display: none;
+        
+    }
+    #mnav{
+        width: 67vw;
+    }
+    #mnav a {
+        font-size: 3vw;}
+    #lnav{
+        width:15vw;
+    }
+    #textarea{
+        height: 45%;
+        flex-direction: column;
+    }
+    #slash{
+        display: none;
+    }
+    #img{
+        height: 30%;
+    }
+}
+@media (max-width:877px) {
+   
+    #tagline{
+        font-size: 2.6vw;
+        margin-right: 5px;
+        font-weight: bolder;
+    }
+    #rtext{
+        margin-left: 72px;
+    }
+   #btn2{
+    font-size: 15px;
+    margin-left: 35px;
+   }
+   #Slash2{
+    display:none ;
+   }
+   #bTwo{
+    flex-direction: column;
+   }
+   #Avatars{
+    width: 100%;
+   }
+}
